@@ -1,7 +1,7 @@
 const { stairCounter, basementFinder } = require("./1.js");
 
-describe("Day 1", () => {
-  describe("Part 1", () => {
+describe("day 1", () => {
+  describe("part 1", () => {
     it("( means +1", () => {
       expect(stairCounter("(")).toEqual(1);
     });
