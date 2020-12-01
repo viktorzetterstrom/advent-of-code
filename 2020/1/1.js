@@ -1,24 +1,24 @@
 const fs = require("fs");
 
-const part1 = (numArr) => {
-  for (let i = 0; i < numArr.length; i++) {
-    const a = numArr[i];
-    for (let j = 0; j < numArr.length; j++) {
-      const b = numArr[j];
+const part1 = (data) => {
+  for (let i = 0; i < data.length; i++) {
+    const a = data[i];
+    for (let j = 0; j < data.length; j++) {
+      const b = data[j];
       if (a + b === 2020) return a * b;
     }
   }
   throw new Error("No result found");
 };
 
-const part2 = (numArr) => {
-  for (let i = 0; i < numArr.length; i++) {
-    const a = numArr[i];
-    for (let j = 0; j < numArr.length; j++) {
-      const b = numArr[j];
+const part2 = (data) => {
+  for (let i = 0; i < data.length; i++) {
+    const a = data[i];
+    for (let j = 0; j < data.length; j++) {
+      const b = data[j];
       if (a + b >= 2020) continue;
-      for (let k = 0; k < numArr.length; k++) {
-        const c = numArr[k];
+      for (let k = 0; k < data.length; k++) {
+        const c = data[k];
         if (a + b + c === 2020) return a * b * c;
       }
     }
@@ -31,7 +31,7 @@ if (process.env.NODE_ENV !== "test") {
     .readFileSync("./2020/1/input.txt")
     .toString()
     .split("\n")
-    .map((row) => Number(row));
+    .map(Number);
 
   const resultPart1 = part1(input);
   const resultPart2 = part2(input);
