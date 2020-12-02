@@ -29,4 +29,3 @@ describe("day 2 part 2", () => {
     expect(countPasswords(testInput, isValidPassword2)).toBe(1);
   });
 });
-describe("day 1 part 2", () => {});
