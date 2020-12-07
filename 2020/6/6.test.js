@@ -8,7 +8,7 @@ describe("day 6 part 1", () => {
   });
 });
 
-describe("day 6 part 1", () => {
+describe("day 6 part 2", () => {
   it("counts same yes-answers per group", () => {
     expect(countYesPart2(testInput)).toBe(6);
   });
