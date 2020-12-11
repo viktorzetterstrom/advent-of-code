@@ -1,5 +1,4 @@
 const fs = require("fs");
-const { connected } = require("process");
 
 const parseBagRule = (bagRule) => {
   // (light red) bags contain (1 bright white bag, 2 muted yellow bags).

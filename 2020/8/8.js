@@ -1,4 +1,3 @@
-const { notDeepEqual } = require("assert");
 const fs = require("fs");
 
 const parseIntstruction = (str) => {

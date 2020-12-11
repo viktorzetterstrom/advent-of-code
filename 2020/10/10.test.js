@@ -2,7 +2,6 @@ const { loadInput, part1, part2 } = require("./10");
 
 const testInput = loadInput("test-input.txt");
 const testInput2 = loadInput("test-input2.txt");
-const testInput3 = loadInput("test-input3.txt");
 
 describe("day 10 part 1", () => {
   it("solves test cases", () => {
