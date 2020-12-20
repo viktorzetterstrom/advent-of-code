@@ -1,5 +1,4 @@
 const fs = require("fs");
-const { dec } = require("ramda");
 
 const loadInput = (fileName) =>
   fs
