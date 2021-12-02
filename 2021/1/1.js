@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { compose, split, map, range, reduce, addIndex, or } = require("ramda");
+const { compose, split, map, reduce, addIndex, or } = require("ramda");
 const reduceIndexed = addIndex(reduce);
 const mapIndexed = addIndex(map);
 
