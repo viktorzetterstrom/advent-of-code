@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "jest": "latest",
+    "node-dijkstra": "^2.5.0",
     "ramda": "latest"
   }
 }
